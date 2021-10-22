@@ -13,6 +13,7 @@
 		2C1BB035271E8074007103A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BB033271E8074007103A7 /* Main.storyboard */; };
 		2C1BB037271E807D007103A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BB036271E807D007103A7 /* Assets.xcassets */; };
 		2C1BB03A271E807D007103A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BB038271E807D007103A7 /* LaunchScreen.storyboard */; };
+		50B4C7B7529935127943CC7E /* Pods_Currencyexchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A003B099C077B765E978F1B /* Pods_Currencyexchange.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		2C1BB036271E807D007103A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C1BB039271E807D007103A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C1BB03B271E807D007103A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A003B099C077B765E978F1B /* Pods_Currencyexchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Currencyexchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		542837BAC8698BEEE6B736F0 /* Pods-Currencyexchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencyexchange.release.xcconfig"; path = "Target Support Files/Pods-Currencyexchange/Pods-Currencyexchange.release.xcconfig"; sourceTree = "<group>"; };
+		C01E2960D8E7145886C69257 /* Pods-Currencyexchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencyexchange.debug.xcconfig"; path = "Target Support Files/Pods-Currencyexchange/Pods-Currencyexchange.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B4C7B7529935127943CC7E /* Pods_Currencyexchange.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2C1BB02C271E8074007103A7 /* Currencyexchange */,
 				2C1BB02B271E8074007103A7 /* Products */,
+				8DAFABE25C43192185D8A7D4 /* Pods */,
+				E3A821FDF2E2D89072B4E00A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Currencyexchange;
 			sourceTree = "<group>";
 		};
+		8DAFABE25C43192185D8A7D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C01E2960D8E7145886C69257 /* Pods-Currencyexchange.debug.xcconfig */,
+				542837BAC8698BEEE6B736F0 /* Pods-Currencyexchange.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3A821FDF2E2D89072B4E00A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A003B099C077B765E978F1B /* Pods_Currencyexchange.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1BB03E271E807D007103A7 /* Build configuration list for PBXNativeTarget "Currencyexchange" */;
 			buildPhases = (
+				F9D75CA77FE74F069C232840 /* [CP] Check Pods Manifest.lock */,
 				2C1BB026271E8074007103A7 /* Sources */,
 				2C1BB027271E8074007103A7 /* Frameworks */,
 				2C1BB028271E8074007103A7 /* Resources */,
+				521643DCA362D0BCBEA88D70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		521643DCA362D0BCBEA88D70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Currencyexchange/Pods-Currencyexchange-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Currencyexchange/Pods-Currencyexchange-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Currencyexchange/Pods-Currencyexchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D75CA77FE74F069C232840 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Currencyexchange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C1BB026271E8074007103A7 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		2C1BB03F271E807D007103A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C01E2960D8E7145886C69257 /* Pods-Currencyexchange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		2C1BB040271E807D007103A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542837BAC8698BEEE6B736F0 /* Pods-Currencyexchange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
